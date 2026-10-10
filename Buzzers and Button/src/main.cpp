@@ -1,22 +1,22 @@
 #include <Arduino.h>
 
-// Pin 52 - Button
-// Pin 50 - Buzzer 1
-// Pin 53 - Buzzer 2
+// Pin 2 - Button
+// Pin 3 - Buzzer 1
+// Pin 4 - Buzzer 2
 
 void setup() {
-    pinMode(52, INPUT_PULLUP);
-    pinMode(50, OUTPUT);
-    pinMode(53,OUTPUT);
+    pinMode(2, INPUT_PULLUP);
+    pinMode(3, OUTPUT);
+    pinMode(4,OUTPUT);
 }
 
 void loop() {
-    if (digitalRead(52) == LOW) {
-        tone(50, 500);
-        delay(200);
-        tone(53, 500);
+    if (digitalRead(2) == LOW) {
+        tone(3, 500);
+        delay(210);
+        tone(4, 500);
         delay(2000);
-        noTone(50);
-        noTone(53);
+        noTone(3);
+        noTone(4);
     }
 }
