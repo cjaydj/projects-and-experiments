@@ -7,7 +7,7 @@
 void setup() {
     pinMode(2, INPUT_PULLUP);
     pinMode(3, OUTPUT);
-    pinMode(4,OUTPUT);
+    pinMode(4, OUTPUT);
 }
 
 void loop() {
